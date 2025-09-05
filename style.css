@@ -5,7 +5,11 @@ body {
 }
 
 /* Hero Section */
-.hero {
+.hero { 
+  background: url("img/hero.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
   background: url("https://via.placeholder.com/1600x800") no-repeat center center/cover;
   color: white;
   text-align: center;
