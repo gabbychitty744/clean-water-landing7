@@ -6,16 +6,11 @@ body {
 
 /* Hero Section */
 .hero { 
-  background: url("img/hero.jpg") no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-  background: url("https://via.placeholder.com/1600x800") no-repeat center center/cover;
+  background: url("img/water.png") no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 100px 20px;
 }
-
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
