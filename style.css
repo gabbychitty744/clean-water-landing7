@@ -22,7 +22,7 @@ html {
   padding-top: 80px;
 }
 
-/* Logo in top-right corner */
+/* Logo in top-right */
 .logo {
   position: absolute;
   top: 20px;
@@ -33,17 +33,16 @@ html {
   z-index: 10;
 }
 
-/* Hero Content */
+/* Hero content container */
 .hero-content {
   position: relative;
   z-index: 2;
   max-width: 700px;
-  padding-top: 300px; /* Push text lower */
+  padding-top: 500px; /* Adjust this value to push text lower */
 }
 
 .hero-content h1 {
   font-size: 2.5rem;
-  margin-top: 0;
   margin-bottom: 20px;
   transition: transform 0.3s ease;
 }
@@ -62,7 +61,7 @@ html {
   transform: scale(1.03);
 }
 
-/* Button */
+/* Call to Action Button */
 .btn {
   display: inline-block;
   background: #fdd835;
@@ -121,11 +120,4 @@ html {
   background-color: #ffc107;
   transform: scale(1.05);
   cursor: pointer;
-}
-
-/* Optional: Fade-in for logo */
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
 }
