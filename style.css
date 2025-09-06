@@ -29,6 +29,13 @@ body {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+transition: background-color 0.3s ease, transform 0.3s ease; /* 💥 Add this */
+}
+
+.btn:hover {
+  background-color: #ffc107; /* Slightly deeper yellow */
+  transform: scale(1.05); /* 💥 Button grows slightly */
+  cursor: pointer;
 }
 
 /* Story Section */
@@ -52,6 +59,10 @@ body {
   background: #f4f4f4;
   padding: 60px 20px;
   text-align: center;
+}.cta a:hover {
+  background-color: #ffc107;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .cta h2 {
@@ -65,4 +76,15 @@ body {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+}html {
+  scroll-behavior: smooth;
+}.logo {
+  animation: fadeIn 2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
