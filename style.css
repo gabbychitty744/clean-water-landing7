@@ -41,6 +41,62 @@ body {
   z-index: 2;
   max-width: 700px;
   padding: 20px;
+}.hero-content:hover h1 {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.hero-content:hover p {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+.hero-content:hover h1 {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.hero-content:hover p {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+Summary
+Use media queries to adjust text sizes, paddings, and logo size on smaller devices.
+
+Add hover effects with transitions on buttons, logo fade-in, and paragraphs.
+
+Use smooth scrolling for a polished navigation experience.
+
+If you want, I can prepare a full updated CSS file snippet for you with all of these included! Would you like me to do that?
+
+
+
+
+Ask ChatGPT
+You said:
+where do i add this .hero-content:hover h1 {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.hero-content:hover p {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+
+ChatGPT said:
+You add those CSS rules inside your existing style.css file, anywhere among your other CSS rules—ideally grouped near your .hero-content or hero section styles for clarity.
+
+For example, after your .hero-content styles, just add:
+
+css
+Copy code
+.hero-content:hover h1 {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.hero-content:hover p {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
 }
 
 /* Fade-in animation */
