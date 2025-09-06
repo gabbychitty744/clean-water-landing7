@@ -20,11 +20,7 @@ body {
 
 /* Dark overlay for readability */
 .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.15);
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.1); /* much lighter */
 }
 
 /* Logo positioned top-right */.logo {
