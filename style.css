@@ -27,15 +27,16 @@ body {
   z-index: 1;
 }
 
-/* Logo positioned top-right */
-.logo {
+/* Logo positioned top-right */.logo {
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 120px;
+  width: 150px; /* make it bigger */
+  height: auto;
   animation: fadeIn 2s ease forwards;
   opacity: 0;
   z-index: 3;
+  object-fit: contain;
 }
 
 /* Container for text content */
