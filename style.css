@@ -12,32 +12,20 @@ body {
   color: white;
   overflow: hidden;
   padding-top: 80px; /* space for logo */
-  padding-bottom: 200px; /* more bottom space */
   display: flex;
-  justify-content: center;
-  align-items: flex-end; /* move content to bottom */
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
   text-align: center;
 }
 
-/* Dark overlay for readability */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.1); /* light overlay */
-  z-index: 1;
-}
-
-/* Logo positioned top-right */
+/* Logo top-right */
 .logo {
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 150px;
+  width: 150px; /* adjust size here */
   height: auto;
-  animation: fadeIn 2s ease forwards;
-  opacity: 0;
-  z-index: 3;
+  z-index: 10;
   object-fit: contain;
 }
 
@@ -46,10 +34,10 @@ body {
   position: relative;
   z-index: 2;
   max-width: 700px;
-  padding: 20px;
-  margin-bottom: 40px; /* space above bottom */
+  padding-top: 180px; /* pushes content way lower */
 }
 
+/* Headline */
 .hero-content h1 {
   font-size: 2.5rem;
   margin-top: 0;
@@ -57,23 +45,20 @@ body {
   transition: transform 0.3s ease;
 }
 
+/* Paragraph */
 .hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
   transition: transform 0.3s ease;
 }
 
+/* Hover effects */
 .hero-content:hover h1 {
   transform: scale(1.05);
 }
 
 .hero-content:hover p {
   transform: scale(1.03);
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
 }
 
 /* Buttons */
@@ -128,7 +113,6 @@ body {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cta a:hover {
@@ -140,4 +124,11 @@ body {
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
