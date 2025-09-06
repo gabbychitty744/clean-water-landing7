@@ -11,13 +11,13 @@ body {
   background: url("img/water.png") no-repeat center 30% / cover;
   color: white;
   overflow: hidden;
-  padding-top: 80px; /* enough space so logo & content don’t overlap */
+  padding-top: 80px; /* keep some top padding for logo */
+  /* Remove vertical centering */
   display: flex;
-  justify-content: center; /* centers hero-content horizontally */
-  align-items: center;     /* centers hero-content vertically */
+  justify-content: center; /* center horizontally */
+  /* align-items: center;  <-- remove this */
   text-align: center;
 }
-
 /* Dark overlay for readability */
 .hero::before {
   background-color: rgba(0, 0, 0, 0.1); /* much lighter */
@@ -53,6 +53,13 @@ body {
 .hero-content:hover h1 {
   transform: scale(1.05);
   transition: transform 0.3s ease;
+}.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding-top: 200px; /* push content lower */
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .hero-content:hover p {
