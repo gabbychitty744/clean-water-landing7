@@ -1,4 +1,3 @@
-/* Reset and base styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -12,25 +11,22 @@ body {
   background: url("img/water.png") no-repeat center 30% / cover;
   color: white;
   overflow: hidden;
-  padding-top: 80px; /* space so logo & content don’t overlap */
+  padding-top: 80px; /* space for logo */
+  padding-bottom: 200px; /* more bottom space */
   display: flex;
   justify-content: center;
-  align-items: flex-end; /* pushes content to the bottom */
+  align-items: flex-end; /* move content to bottom */
   text-align: center;
-  padding-bottom: 80px; /* breathing room below content */
 }
 
-/* Remove the dark overlay */
-/* Uncomment below if you want overlay */
-/*
+/* Dark overlay for readability */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.1); /* light overlay */
   z-index: 1;
 }
-*/
 
 /* Logo positioned top-right */
 .logo {
@@ -45,34 +41,39 @@ body {
   object-fit: contain;
 }
 
-/* Container for hero text */
+/* Container for text content */
 .hero-content {
   position: relative;
   z-index: 2;
   max-width: 700px;
   padding: 20px;
+  margin-bottom: 40px; /* space above bottom */
 }
 
-/* Push the hero text down by adding margin-top */
 .hero-content h1 {
   font-size: 2.5rem;
-  margin-top: 120px; /* big push down */
+  margin-top: 0;
   margin-bottom: 20px;
   transition: transform 0.3s ease;
 }
 
 .hero-content p {
-  margin-bottom: 30px;
   transition: transform 0.3s ease;
 }
 
-/* Hover scale effect */
 .hero-content:hover h1 {
   transform: scale(1.05);
 }
 
 .hero-content:hover p {
   transform: scale(1.03);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 /* Buttons */
@@ -139,11 +140,4 @@ body {
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
 }
